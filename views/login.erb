@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | LogIn</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/login-signup.css">
+</head>
+<body>
+    <% if flash[:user] %>
+        <center><h3><div data-alert class="flash" style="border: 2px solid red; background-color: #0b2243; width: 30%; text-align: center;border-radius: 4px;display: flex;color: red;align-items: center;justify-content: center;">
+            <%= flash[:user] %> <blockquote>
+            <a href="login" class="close" style="color:red;">  &times;</a>
+        </div></h3></center>
+    <% end %>
+    <% if flash[:invalid] %>
+        <center><h3><div data-alert class="flash" style="border: 2px solid red; background-color: #0b2243; width: 30%; text-align: center;border-radius: 4px;display: flex;color: red;align-items: center;justify-content: center;">
+            <%= flash[:invalid] %> <blockquote>
+            <a href="login" class="close" style="color:red;">&times;</a>
+        </div></h3></center>
+    <% end %>
+    <a class="home" href="./" style="color: #4fb9e9;"> &larr; Home</a>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="signup" method="post">
+                <h1>Create Account</h1>
+                <br>
+                <input type="text" name="name" placeholder="Name" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="submit" class="button" value="Sign Up"/>
+                <hr width="100%">
+                <a href="#">Are you a college or University ?</a>
+                <a href="./register" class="button">Sign Up as University</a>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="login" method="post">
+                <h1>Sign in</h1>
+                <br><br>
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <input type="submit" class="button" value="Sign in"/>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Techway.school - <a href="./index.html">Description</a> - &#169; copyright | Code of Duty </p>
+    </footer>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>

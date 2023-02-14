@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+:root{
+    --main-color: #fcd900;
+    --second-color: #4fb9e9;
+    --text-color: #0b2243;
+    --third-color: #b0dbf3;
+    --bg-color: #f2f7fb;
+    --big-font: 2.59rem;
+    --h2-font: 2rem;
+    --p-font: 1rem;
+}
+.button{
+    color: #ffffff;
+    background: var(--second-color);
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+}
+.button:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+}
+.button2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    background: var(--text-color);
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+}
+.button2:hover{
+    background: var(--second-color);
+    color: var(--main-color);
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+/* header */
+header{
+    width: 100%;
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    box-shadow: 1px 1px 5px #c8c8c8;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+.user_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.user_info img{
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+}
+.search_bar input[type="search"]{
+    width: 20rem;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding: 2px;
+    outline: none;
+}
+.search_bar input[type="search"]:focus{
+    border-bottom: 1px solid var(--main-color);
+    color: #000;
+}
+.search_bar input[type="submit"]{
+    background: transparent;
+    border: none;
+}
+/* section hello */
+.hello{
+    background: var(--text-color);
+    width: 90%;
+    height: 4rem;
+    margin: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.hello p{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+.hello span{
+    color: var(--main-color);
+    font-size: .7rem;
+}
+/* sections part */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    gap: 2rem;
+    grid-auto-rows: auto;
+    margin: 10px 5%;
+}
+.section{
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    padding: 1rem;
+}
+.head{
+    margin-bottom: 10px;
+}
+.head h2{
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.head hr{
+    width: 2.8rem;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+}
+/* rooms */
+.rooms{
+    grid-column: span 2;
+    background: #ffffff;
+}
+.room-link{
+    margin-bottom: 10px;
+}
+.room-link input[type="text"]{
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding: 2px;
+    outline: none;
+}
+.room-link input[type="text"]:focus{
+    border-bottom: 1px solid var(--main-color);
+    color: #000;
+}
+.room-link button{
+    margin-left: 7px;
+}
+/* exercice */
+.exercice{
+    grid-row: span 3;
+    grid-column: span 2 ;
+    background: #ffffff;
+}
+.ex-container{
+    display: flex;
+    flex-direction: column;
+}
+.ex-row{
+    border: 1px solid var(--third-color);
+    margin: .5rem 0;
+    padding: 1rem;
+}
+.ex-row span{
+    color: var(--second-color);
+    padding: 0 1rem;
+    font-style: italic;
+}
+.ex-row button{
+    margin: 5px 0px;
+    color: #ffffff;
+    background: var(--second-color);
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+    float: right;
+}
+
+/* agenda */
+.agenda{
+    grid-column: span 2;
+    background: #ffffff;
+    background: var(--third-color);
+}
+.agenda-container{
+    display: flex;
+    flex-direction: column;
+}
+.agenda-row{
+    /* background: var(--bg-color); */
+    margin: 1px 0;
+    /* padding: 5px; */
+}
+.agenda-row h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: small;
+    font-weight: 100;
+    padding: 7px 0;
+}
+.agenda-row h4 hr{
+    height: 1px;
+    width: 75%;
+    border: none;
+    border-bottom: 1.5px dotted gray;
+}
+.agenda-row ul li{
+    padding: 0;
+    margin: 1px 40px;
+}
+.agenda-row ul li::before {
+    content: "\2022"; 
+    font-size: 1.5rem;
+    color: var(--second-color);
+    display: inline-block; 
+    width: .8em;
+    margin-left: -1em;
+}
+.agenda-row ul li span{
+    color: gray;
+    font-size: small;
+}
+.note{
+    grid-column: span 2;
+    background: white;
+}
+.note .head{
+    display: flex;
+    justify-content: space-between;
+}
+.note .head button{
+    margin: 0px 5px;
+}
+.note-container{
+    display: flex;
+}
+.note-row{
+    background: var(--third-color);
+    width: 12rem;
+    margin-right: 1rem;
+    padding: .6rem;
+    border-radius: 5px;
+}
+.note-head{
+    border-bottom: 2px solid var(--bg-color);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.note-head span{
+    font-size: small;
+    /* padding: 0px 0 15px 7px; */
+}
+.note-body button{
+    float: right;
+}
+.article{
+    grid-column: span 3;
+    background: white;
+    height: 20rem;
+}
+.article-container{
+    display: flex;
+}
+.article-row{
+    width: 12rem;
+    height: 15rem;
+    margin-left: 1rem;
+    border: 1px solid #c8c8c8;
+    box-shadow: 2px 2px 2px #c8c8c8;
+}
+.article-row h3{
+    background: var(--text-color);
+    color: var(--main-color);
+    padding: 2rem;
+}
+.article-body{
+    padding: 1rem;
+}
+.article-body p{
+    margin-bottom: 1rem;
+}
+.online{
+    background: white;
+}
+.online-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 70px);
+}
+.online-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.online-row img{
+    width: 30px;
+    background: #fcee90;
+    border-radius: 50%;
+}
+.online-row span{
+    font-size: small;
+    text-align: center;
+}
+footer{
+    margin: 5rem 5% 1rem 5%;
+    text-align: center;
+}
+footer p a{
+    text-decoration: underline;
+}
+footer p a:hover{
+    color: #4fb9e9;
+}

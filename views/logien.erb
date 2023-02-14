@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | LogIn</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/signup.css">
+</head>
+<body style="background-image: url(../image/gaad.jpg);background-size: 1370px;">
+<br><br>
+    <% if flash[:invalid] %>
+        <center><h3><div data-alert class="flash" style="border: 2px solid red; background-color: #0b2243; width: 30%; text-align: center;border-radius: 4px;display: flex;color: red;align-items: center;justify-content: center;">
+            <%= flash[:invalid] %> <blockquote>
+            <a href="login" class="close" style="color:red;">&times;</a>
+        </div></h3></center>
+    <% end %>
+    <div class="container">
+        <a href="/"> &larr; Home</a>
+        <form action="login" method="post">
+            <h2>LogIn</h2>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <p>forgot password ?</p>
+            <input type="submit" value="LogIn">
+            <span>Don't yet have an Acount? <a href="./signup">Sign Up</a></span>
+        </form>
+    </div>
+</body>
+</html>

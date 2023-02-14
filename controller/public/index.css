@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+:root{
+    --main-color: #fcd900;
+    --second-color: #4fb9e9;
+    --text-color: #f2f7fb;
+    --third-color: #b0dbf3;
+    --bg-color: #0b2243;
+    --big-font: 2.59rem;
+    --h2-font: 2rem;
+    --p-font: 1rem;
+}
+.button{
+    color: #ffffff;
+    background: var(--second-color);
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+}
+.button:hover{
+    background: var(--text-color);
+    color: var(--main-color);
+}
+.button2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    background: var(--text-color);
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+}
+.button2:hover{
+    background: var(--second-color);
+    color: var(--main-color);
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--text-color);
+    padding: 1rem 5rem;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+header nav ul li a{
+    color: #0b2243;    
+    font-size: 1.1rem;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.register{
+    border: 1.5px solid black;
+    height: 100px;
+    padding: 5px 7px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    color: #0b2243
+}
+.register b{
+    color: #0b2243
+}
+.login{
+    border: 1.5px solid var(--bg-color);
+    padding: 5px 7px;
+    border-radius: 6px;
+    color: var(--main-color);
+}
+.login:hover{
+    text-decoration: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+/* banner */
+.banner{
+    width: 100%;
+    height: 75vh;
+    background: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.banner-text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.banner-text h1{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.banner-text h1 span{
+    color: var(--bg-color);
+}
+.banner-text p{
+    margin: 2rem 0;
+}
+.banner-text button{
+    background-color: #0b2243;
+    border: 1px solid var(--bg-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #fcd900;
+}
+
+.head{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.head h2{
+    color: var(--main-color);
+    margin: 2rem 0 .5rem 0;
+}
+.head hr{
+    width: 100px;
+    margin: 1rem auto;
+    border: 2px solid var(--main-color);
+}
+/* description */
+.description{
+    width: 90%;
+    margin: 5rem auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desp-text h2{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.desp-text h2 hr{
+    border: none;
+    border-bottom: 2px solid var(--second-color);
+    width: 100px;
+}
+.desp-text ol li{
+    margin: 1rem;
+    padding: 5px;
+}
+/* demo */
+.demo{
+    width: 80%;
+    margin: 5rem auto;
+}
+.demo .video{
+    width: 100%;
+    height: 80vh;
+}
+.about{
+    width: 90%;
+    margin: 5rem auto;
+}
+.about-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-color);
+    padding: 0 2rem;
+    height: 200px;
+    margin: 7rem 0;
+}
+.about-text{
+    padding: 3rem;
+}
+.about-text h2{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+}
+.fa.arrow:before {
+    content: ">";
+  }

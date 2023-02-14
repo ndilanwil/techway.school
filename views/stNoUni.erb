@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | Home</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/stylle2.css">
+    <script type="text/javascript">
+        function checkbox() {
+        var confirmmessage = "You need to be part of a university";
+        var go = "homes";
+        if (confirm(confirmmessage)) {
+            window.location = go;
+        } else {
+            window.location = go;        
+            }
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./image/techway.png" width="100px" alt="techway.school logo">
+        </a>
+            <nav>
+                <ul>
+                    <li> <a href="" onclick="checkbox()"> Agenda </a> </li>
+                    <li> <a href=""> Chat </a> </li>
+                    <li> <a href=""> Docs </a> </li>
+                    <li> <a href=""> Exam </a> </li>
+                    <li> <a href=""> Room </a> </li>
+                </ul>
+        </nav>
+        <form class="search_bar">
+            <input type="search" name="search" id="search">
+            <input type="submit" value="🔍">
+        </form>
+        <div class="user_info">
+            <img src="./image/icon.png" width="30px" alt="user_name"> &nbsp;
+            <span><%= $user %></span>
+        </div>
+    </header>
+    <section class="hello">
+        <p>Hello, <%= $user %></p>
+        <span> <script> document.write(new Date().toDateString()+"  "+ new Date().toLocaleTimeString());</script> </span>
+    </section>
+    <br><br><br>
+    <div class="join">
+        <label>To use all functionalities, you must be a member of a school. Choose one of the solution below</label>
+        <br><br><br> 
+        <div>
+            <ul>
+                <li><a href="" class="link">Register to a school</a></li>
+                <li><a href="" class="link2">Join Your school</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Techway.school - <a href="./index.html">Description</a> - &#169; copyright | Code of Duty </p>
+    </footer>  
+</body>
+</html>

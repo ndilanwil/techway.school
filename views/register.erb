@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | Dashboard</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <h1>Register your University and start a GREAT EXPERIENCE !!</h1>
+    <% if flash[:user] %>
+        <center><h3><div data-alert class="flash" style="border: 2px solid red; background-color: #fcfae9; width: 30%;height: 10vh; text-align: center;border-radius: 5px;display: flex;color: red;align-items: center;justify-content: center;">
+            <%= flash[:user] %> <blockquote>
+            <a href="register" class="close">&times;</a>
+        </div></h3></center>
+    <% end %>
+    <div class="container">
+        <a class="home" href="/"> &larr; Home</a>
+        <form action="register" method="post">
+            <h2>Register Now!</h2>
+            <input type="text" placeholder="University name" name="s_name" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="number" name="telephone" placeholder="Contact number" style="-webkit-appearance: none;"required>
+            <input type="text" name="locat" placeholder="Location" required>
+            <% if flash[:password] %>
+                <div data-alert class="flash">
+                    <%= flash[:password] %>
+                    <a href="register" class="close">&times;</a>
+                </div>
+            <% end %>
+            <input type="password" name="password" id="password" placeholder="Password" class="p" required>
+            <input type="password" name="Rpassword" id="password" placeholder="Re-enter Password" required>
+            <input type="submit" value="Sign Up">
+            <span>Already have an Acount? <a href="./login">logIn</a> </span>
+        </form>
+    </div>
+</body>
+</html>

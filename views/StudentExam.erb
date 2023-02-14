@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | Home</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/Student's_Exam.css">
+</head>
+<body>
+    <header>
+        <a href="./home.html">
+            <img src="./image/techway.png" width="100px" alt="techway.school logo">
+        </a>
+            <nav>
+                <ul>
+                    <li> <a href="./coming-soon.html"> Agenda </a> </li>
+                    <li> <a href="./coming-soon.html"> Chat </a> </li>
+                    <li> <a href="./document.html"> Docs </a> </li>
+                    <li> <a href="./coming-soon.html"> Exam </a> </li>
+                    <li> <a href="./coming-soon.html"> Room </a> </li>
+                </ul>
+        </nav>
+        <form class="search_bar">
+            <input type="search" name="search" id="search">
+            <input type="submit" value="🔍">
+        </form>
+        <div class="user_info">
+            <img src="./image/icon.png" width="30px" alt="user_name"> &nbsp;
+            <span>User Name</span>
+        </div>
+    </header>
+    <section class="hello">
+        <p>Course Name, Exam Name</p>
+        <span> <script> document.write(new Date().toDateString()+"  "+ new Date().toLocaleTimeString());</script> </span>
+    </section>
+    <section class="container">
+        <div class="section">
+            <form action="#" method="post">
+                <div class="exercice">
+                    <h4 class="exercice-name">Exercice 1:</h4>
+                    <div class="question">
+                        <p id="qu1" class="question-text">Question 1 <span class="score">(1 pts)</span></p>
+                        <textarea placeholder="Answer here" maxlength="4000" class="text-answer" id="ans1" name="ans1"></textarea>
+                    </div>
+                    
+                    <div class="question">
+                        <p id="qu2" class="question-text">Question 2 <span class="score">(1 pts)</span></p>
+                        <div class="radio-answer">
+                            <input type="radio" name="ans2" value="1"><p class="question-answer">Answer 1</p>
+                            <input type="radio" name="ans2" value="1"><p class="question-answer">Answer 2</p>
+                            <input type="radio" name="ans2" value="1"><p class="question-answer">Answer 3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p id="qu3" class="question-text">Question 3 <span class="score">(1 pts)</span></p>
+                        <input type="file" class="file-answer" name="ans3" id="ans3"> <p class="question-answer">Upload Your Answer</p>
+                    </div>
+                </div>
+
+                <div class="exercice">
+                    <h4 class="exercice-name">Exercice 2:</h4>
+                    <div class="question">
+                        <p id="qu1" class="question-text">Question 1 <span class="score">(1 pts)</span></p>
+                        <textarea placeholder="Answer here" maxlength="4000" class="text-answer" id="ans1" name="ans1"></textarea>
+                    </div>
+                    
+                    <div class="question">
+                        <p id="qu2" class="question-text">Question 2 <span class="score">(1 pts)</span></p>
+                        <div class="radio-answer">
+                            <input type="radio" name="ans2" value="1"> <p class="question-answer">Answer 1</p>
+                            <input type="radio" name="ans2" value="1"> <p class="question-answer">Answer 2</p>
+                            <input type="radio" name="ans2" value="1"> <p class="question-answer">Answer 3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p id="qu3" class="question-text">Question 3 <span class="score">(1 pts)</span></p>
+                        <input type="file" class="file-answer" name="ans3" id="ans3"> <p class="question-answer">Upload Your Answer</p>
+                    </div>
+                </div>
+                <div class="submit-exam">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Techway.school - <a href="./index.html">Description</a> - &#169; copyright | Code of Duty </p>
+    </footer>
+</body>
+</html>

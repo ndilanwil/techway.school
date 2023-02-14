@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techway.School | Home</title>
+    <link rel="icon" href="./image/s.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="text/javascript">
+        function checkbox() {
+        var confirmmessage = "You need to be part of a university";
+        var go = "home";
+        if (confirm(confirmmessage)) {
+            window.location = go;
+        } else {
+            window.location = go;        
+            }
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <a href="/home">
+            <img src="./image/techway.png" width="100px" alt="techway.school logo">
+        </a>
+            <nav>
+                <ul>
+                    <li> <a href="#" onclick="checkbox()"> Agenda </a> </li>
+                    <li> <a href="./coming"> Chat </a> </li>
+                    <li> <a href="./document"> Docs </a> </li>
+                    <li> <a href="./coming"> Exam </a> </li>
+                    <li> <a href="./coming"> Room </a> </li>
+                </ul>
+        </nav>
+        <form class="search_bar">
+            <input type="search" name="search" id="search">
+            <input type="submit" value="🔍">
+        </form>
+        <div class="user_info">
+            <img src="./image/icon.png" width="30px" alt="user_name"> &nbsp;
+            <span><%= $user %></span>
+        </div>
+    </header>
+    <section class="hello">
+        <p>Hello, <%= $user %></p>
+        <span> <script> document.write(new Date().toDateString()+"  "+ new Date().toLocaleTimeString());</script> </span>
+    </section>
+    <section class="container">
+        <!-- room part -->
+        <div class="rooms section">
+            <div class="head">
+                <h2>Rooms</h2>
+                <hr>
+            </div>
+            <form class="room-link">
+                <input type="text" placeholder="Already have a room link">
+                <input type="submit" class="button2" value="&rarr;">
+                <button class="button">Create room Now</button>
+                <button class="button">Plan a room</button>
+            </form>
+            <div class="room-create">
+            </div>
+        </div>
+        <!-- exercice part -->
+        <div class="exercice section">
+            <div class="head">
+                <h2>Exercice/Homework</h2>
+                <hr>
+            </div>
+            <div class="ex-container">
+                <div class="ex-row">
+                    <h3 class="head">This is exercice title <hr> </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam nobis eveniet perspiciatis odio molestiae.</p>
+                    <span>Course Name / school - <b>12 jan 2023</b></span><br>
+                    <button>View</button>
+                </div>
+                <div class="ex-row">
+                    <h3 class="head">This is exercice title <hr> </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam nobis eveniet perspiciatis odio molestiae.</p>
+                    <span>Course Name / school - <b>12 jan 2023</b></span><br>
+                    <button>View</button>
+                </div>
+                <div class="ex-row">
+                    <h3 class="head">This is exercice title <hr> </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam nobis eveniet perspiciatis odio molestiae.</p>
+                    <span>Course Name / school - <b>12 jan 2023</b></span><br>
+                    <button>View</button>
+                </div>
+            </div>  
+        </div>
+        <!-- Agenda part -->
+        <div class="agenda section">
+            <div class="head">
+                <h2>Agenda</h2>
+                <hr>
+            </div>
+            <div class="agenda-container">
+                <div class="agenda-row">
+                    <h4 class="date">Today <hr> </h4>
+                    <ul>
+                        <li>
+                            Software Architecture Course | Course Name | school <br>
+                            <span>12:00-13:15</span>
+                        </li>
+                        <li>
+                            Software Architecture Course | Course Name | school <br>
+                            <span>12:00-13:15</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agenda-row">
+                    <h4 class="date">Mon, 9 January <hr> </h4>
+                    <ul>
+                        <li>
+                            Software Architecture Course <br>
+                            <span>12:00-13:15</span>
+                        </li>
+                        <li>
+                            Software Architecture Course <br>
+                            <span>12:00-13:15</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Note Section -->
+        <div class="note section">
+            <div class="head">
+                <div>
+                    <h2>Notes</h2>
+                    <hr>
+                </div>
+                <div>
+                    <button class="button">All Note</button>
+                    <button class="button">Add Note</button>
+                </div>
+            </div>
+            <div class="note-container">
+                <div class="note-row">
+                    <div class="note-head">
+                        <h3>Note Title</h3>
+                        <span>12 Dec 2022</span>
+                    </div>
+                    <div class="note-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, corrupti....</p>
+                        <button class="button2">&rarr;</button>
+                    </div>
+                </div>
+                <div class="note-row">
+                    <div class="note-head">
+                        <h3>Note Title</h3>
+                        <span>12 Dec 2022</span>
+                    </div>
+                    <div class="note-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, corrupti....</p>
+                        <button class="button2">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- article section -->
+        <div class="article section">
+            <div class="head">
+                <h2>Article, tips and Docs</h2>
+                <hr>
+            </div>
+            <div class="article-container">
+                <div class="article-row">
+                    <h3>Article Title</h3>
+                    <div class="article-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat.....</p>
+                        <a href="/" class="button">read</a>
+                    </div>
+                </div>
+                <div class="article-row">
+                    <h3>Article Title</h3>
+                    <div class="article-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat.....</p>
+                        <a href="/" class="button">read</a>
+                    </div>
+                </div>
+                <div class="article-row">
+                    <h3>Article Title</h3>
+                    <div class="article-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat.....</p>
+                        <a href="/" class="button">read</a>
+                    </div>
+                </div>
+                <div class="article-row">
+                    <h3>Article Title</h3>
+                    <div class="article-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugiat.....</p>
+                        <a href="/" class="button">read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- online guys -->
+        <div class="online section">
+            <div class="head">
+                <h2>Online</h2>
+                <hr>
+            </div>
+            <div class="online-container">
+                <div class="online-row">
+                    <img src="./image/icon.png" alt="online">
+                    <span>user name</span>
+                </div>
+                <div class="online-row">
+                    <img src="./image/icon.png" alt="online">                    <span>user name</span>
+                </div>
+                <div class="online-row">
+                    <img src="./image/icon.png" alt="online">                    <span>user name</span>
+                </div>
+                <div class="online-row">
+                    <img src="./image/icon.png" alt="online">                    <span>user name</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Techway.school - <a href="./index.html">Description</a> - &#169; copyright | Code of Duty </p>
+    </footer>
+
+    
+</body>
+</html>
